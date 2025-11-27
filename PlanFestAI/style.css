@@ -1,0 +1,686 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --roxo-claro: #b38cff;
+    --roxo-escuro: #240d52;
+    --violeta: #5e17eb;
+    --branco: #ffffff;
+    --preto: #000000;
+    --gradient: linear-gradient(180deg, #000000, #660ac2, #eddaff, #ede1e1);
+    --gradient2: linear-gradient(180deg, #ede1e1, #660ac2, #000000);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    background: var(--gradient);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.logo {
+    color: var(--roxo-claro);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.negrito {
+    color: var(--violeta);
+}
+
+.simbolo-logo {
+    padding-bottom: 0.4em;
+    height: 0.7em;
+}
+
+.msg {
+    padding: 13em 7em 7em 7em;
+}
+
+.subtitulo-entrada {
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.titulo-entrada {
+    color: var(--roxo-escuro);
+    font-weight: 700;
+    font-size: 6em;
+}
+
+.a-entrada {
+    text-decoration: none;
+    color: var(--roxo-claro);
+    border: 1px solid var(--roxo-escuro);
+    background-color: var(--roxo-escuro);
+    padding: 0.4em 1em;
+    border-radius: 4em;
+    font-size: 2em;
+    margin-top: 1.3em;
+    transition: all 0.8s ease;
+}
+
+.a-entrada:hover {
+    text-decoration: none;
+    color: var(--roxo-escuro);
+    border: 1px solid var(--roxo-claro);
+    background-color: var(--roxo-claro);
+    padding: 0.4em 1em;
+    border-radius: 4em;
+    font-size: 2em;
+    margin-top: 1.3em;
+    font-weight: 700;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    margin-top: 2em;
+}
+
+.titulo-login {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+    padding: 2em;
+    color: var(--roxo-claro);
+}
+
+.card-login {
+    background-color: var(--branco);
+    max-width: 24em;
+    height: 28em;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+.titulo-input {
+    color: var(--roxo-escuro);
+    font-weight: 700;
+    font-size: 1.6em;
+    padding: 0.5em 0.1em;
+
+}
+
+.input-login {
+    background-color: var(--branco);
+    border: 1px solid var(--roxo-claro);
+    border-radius: 3em;
+    height: 2.5em;
+    width: 19.5em;
+    transition: all 0.3s ease;
+}
+
+.input-login:hover {
+    background-color: #b28cff8a;
+}
+
+.input-login:focus {
+    background-color: var(--roxo-claro);
+    border: 1px solid var(--roxo-claro);
+    outline: none;
+    color: #ffffff;
+    cursor: text;
+}
+
+.a-npossui {
+    display: block;
+    width: 100%;
+    margin-top: 3.5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--violeta);
+    transition: all 0.8s ease;
+}
+
+.a-npossui:hover {
+    text-decoration:underline;
+    color: var(--roxo-escuro);
+}
+
+.enter-login {
+    border: #240d52 1px solid;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--roxo-claro);
+    background: var(--roxo-escuro);
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.enter-login:hover {
+    color: var(--roxo-escuro);
+    background: var(--roxo-claro);
+    outline: none;
+}
+
+.input-login {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.div-login {
+    display: flex ;
+    justify-content: center;
+}
+
+.titulo-cad {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+    padding: 2em;
+    color: var(--roxo-claro);
+}
+
+.imagem-fundo {
+  position: absolute;
+  top: 110px;
+  left: 1200px;
+  width: 550px;
+  object-fit: cover;
+  z-index: 0; /* fica na frente do gradiente, mas atrás de tudo */
+  opacity: 0.8; /* ajuste para controle de visibilidade */
+  pointer-events: none; /* impede a imagem de interferir nos cliques */
+}
+
+.menu-sec1 {
+    display: flex;
+}
+
+strong {
+    color: var(--violeta);
+}
+
+.h-logo {
+    color: var(--roxo-claro);
+    text-decoration: none;
+}
+
+.img-logo {
+    width: 1.5em;
+    margin-left: 0.3em;
+    margin-bottom: 1.8em;
+}
+
+.img-logo1 {
+    width: 1em;
+    margin-left: 0.1em;
+    margin-bottom: 0.2em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.2em;
+    gap: 18em; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(180deg, #000000, #000000, #000000, #0a0014, #1d0533);
+    width: 100vw;
+    height: 2em;
+}
+
+main {
+    margin-top: 10em;
+}
+
+.menu-sec1 {
+    width: 30%;
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    gap: 13em;
+}
+
+.h-logo {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.a-menu {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: var(--roxo-claro);
+    transition: all 0.7s ease;
+}
+
+.a-menu:hover {
+    color: #ffffff;
+}
+
+.foto-perfil {
+    width: 2.5em;
+}
+
+.menu-sec1 {
+    width: 11%;
+}
+
+.botao-sair {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; 
+}
+
+.img-sair {
+    margin-bottom: 0.1em;
+    margin-left: 0.6em;
+    width: 1.5em;
+}
+
+.titulos {
+    padding: 8em 6em;
+    width: 68em;
+}
+
+.titulo-index {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--roxo-claro);
+    margin-bottom: 0.5em;
+}
+
+.subtitulo-index {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1.7em;
+    margin-right: 4em;
+}
+
+.botao-planejar {
+    height: 16.2em;
+}
+
+.a-planejar {
+    margin: 0.2em 2.5em;
+    background-color: var(--branco);
+    padding: 0.5em 1em;
+    border-radius: 12em;
+    text-decoration: none;
+    color: var(--roxo-escuro);
+    font-size: 2.2em;
+    transition: all 0.8s ease;
+}
+
+.a-planejar:hover {
+    background-color:  var(--violeta);
+    color: var(--branco);
+}
+
+.servicos {
+    width: 100vw;
+    height: 85vh;
+    box-sizing: border-box;
+    background: var(--gradient2);
+}
+
+.h2-servicos {
+    color: var(--roxo-escuro);
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    padding: 2.2em 2.2em 4em 2.2em;
+}
+
+.icon-servico {
+    width: 1.3em;
+}
+
+.lista-de-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em;
+    align-items: stretch;
+}
+
+.item-servico {
+    flex-direction: column; 
+}
+
+.img1-h1 {
+    width: 1.4em;
+}
+
+.img2-h1 {
+    width: 1.2em;
+}
+
+.img3-h1 {
+    width: 1.4em;
+}
+
+.h1-servicos {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: 700;
+    align-items: center;    
+    gap: 0.1em;     
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 0.5em; 
+}
+
+.h1-servicos1 {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: 700;
+    align-items: center;    
+    gap: 0.1em;     
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 0.5em; 
+    margin-left: 1.1em;
+}
+
+.h1-servicos img {
+    width: 1.2em;           /* uniformiza largura das imagens */
+    height: 1.4em;          /* define altura para todas as imagens */
+    object-fit: contain;    /* mantém proporção */
+}
+
+.p-servicos {
+    color: var(--branco);
+    font-size: 1.3em;
+    margin-right: 6em;
+}
+
+.p-servicos1 {
+    color: var(--branco);
+    font-size: 1.3em;
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+.p-servicos2 {
+    color: var(--branco);
+    font-size: 1.3em;
+    margin-right: 2em;
+}
+
+.sobre {
+    width: 100vw;
+    height: 90vh;
+    box-sizing: border-box;
+    background: var(--gradient);
+}
+
+.cont-sobre {
+    padding: 4em 2em;
+}
+
+.titulo-sobre {
+    color: var(--violeta);
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo-sobre {
+    width: 1.2em;
+    margin-left: 0.3em;
+    margin-bottom: 0.2em 
+}
+
+.p-sobre {
+    color: var(--branco);
+    text-align: center;
+    padding: 4.5em 14em;
+    font-size: 2.4em;
+}
+
+.assistente {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.titulo-assistente {
+    background-color: var(--roxo-claro);
+    height: 6em;
+    padding: 3em;
+}
+
+.h1-assistente {
+    color: var(--violeta);
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.p-assistente {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.4em;
+    padding-top: 1em;
+}
+
+.img-assistente {
+    width: 1em;
+    margin-left: 0.1em;
+    margin-bottom: 0.2em;
+}
+
+.s-ia {
+    display: flex;
+}
+
+.div-prompt {
+   width: 50%; 
+   background-color: var(--violeta);
+   height: 85vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.2em;
+}
+
+.h1-prompt {
+    color: var(--roxo-escuro);
+    padding: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.input-prompt {
+    width: 32em;
+    height: 24em;
+    border-radius: 4em ;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Plus Jakarta Sans';
+    resize: none; 
+    box-sizing: border-box; 
+    font-size: 1.4em;
+    background-color: var(--roxo-claro);
+    color: var(--branco);
+    transition: all ease 0.5s;
+}
+
+.input-prompt:focus {
+    outline: none;
+    background-color: var(--branco);
+    color: var(--roxo-escuro);
+}
+
+.enviar-prompt {
+    background-color: var(--roxo-escuro);
+    padding: 0.4em 1em 0.5em 1em;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1.8em;
+    color: var(--roxo-claro);
+    border: 1px solid var(--roxo-escuro);
+    border-radius: 2em;
+    font-weight: 700;
+    transition: all ease 0.5s;
+}
+
+.enviar-prompt:hover {
+    background-color: var(--roxo-claro);
+    border: 1px solid var(--roxo-claro);
+    color: var(--roxo-escuro);
+    cursor: pointer;
+}
+
+.div-resposta {
+    width: 50%;
+    background-color: var(--roxo-escuro);
+    height: 85vh;
+}
+
+.h1-resposta {
+    color: var(--roxo-claro);
+    padding: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--preto);
+    padding: 4em;
+    height: 6em;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.p-footer {
+    color: var(--branco);
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+
+.icon-redes {
+    width: 3.2em;
+}
+
+.redes {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+.div-resposta {
+    width: 50%;
+    background-color: var(--roxo-escuro);
+    height: 85vh;
+    overflow-y: auto; /* permite scroll se houver muitas sugestões */
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.div-resposta div {
+    transition: all 0.3s ease;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    background-color: #9b59b6;
+    color: #fff;
+    border-radius: 0.5em;
+}
+
+.div-resposta div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Cards PlanFestAI */
+.pf-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+
+.pf-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.05));
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-cat {
+  font-weight: 700;
+  font-size: 0.9em;
+  opacity: 0.95;
+}
+
+.pf-text {
+  font-size: 1.05em;
+  line-height: 1.25em;
+  color: #fff;
+}
+
+/* estiliza a lista de sugestões */
+.lista-sugestoes {
+  list-style: none;          /* remove bolinhas padrão */
+  padding: 0;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  width: 55em;
+}
+
+/* cada item da lista */
+.lista-sugestoes li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;                /* mantém o contraste com o fundo escuro */
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+/* o título (strong) da sugestão */
+.lista-sugestoes strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffb347;             /* um tom de dourado leve */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section {
+  scroll-margin-top: 100px; /* ajuste conforme a altura do seu menu */
+}
+

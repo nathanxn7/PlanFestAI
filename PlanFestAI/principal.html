@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PlanFestAI — Organização inteligente de eventos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+<!-- Importa o script principal -->
+<script type="module" src="script.js"></script>
+</head>
+<body>
+
+<img src="assets/brilho1.svg" alt="imagem decorativa" class="imagem-fundo">
+
+<header>
+    <section class="menu-sec1">
+        <h2 class="h-logo">PlanFest<strong>AI</strong></h2>
+        <img src="assets/logo.svg" class="img-logo">
+    </section>
+
+    <section class="menu-sec2">
+        <ul class="ul-menu">
+            <li class="li-menu"><a href="#titulos" class="a-menu">Home</a></li>
+            <li class="li-menu"><a href="#servicos" class="a-menu">Serviços</a></li>
+            <li class="li-menu"><a href="#sobre" class="a-menu">Sobre</a></li>
+            <li class="li-menu"><a href="#ia" class="a-menu">AI</a></li>
+        </ul>
+    </section>
+
+    <section class="menu-sec3">
+        <img class="foto-perfil" src="assets/perfil-foto.svg" alt="Perfil">
+        <button class="botao-sair"><img class="img-sair" src="assets/sair.svg" alt="Sair"></button> 
+    </section>
+</header>
+
+<main>
+    <section id="titulos" class="titulos">
+        <h2 class="titulo-index">Organização de festas com inteligência artificial</h2>
+        <h3 class="subtitulo-index">Criamos experiências personalizadas e automatizamos o planejamento do seu evento.</h3>
+    </section>
+
+    <section class="botao-planejar">
+        <a href="#ia" class="a-planejar">Planejar!</a>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2 class="h2-servicos">Serviços<img class="icon-servico" src="assets/serviços.svg"></h2>   
+        <section class="lista-de-servicos">
+            <div class="item-servico">
+                <h1 class="h1-servicos1">Casamentos<img src="assets/casamento.svg" class="img1-h1"></h1>
+                <p class="p-servicos1">Planejamento completo para diferentes tipos de casamentos.</p>
+            </div>
+            <div class="item-servico">
+                <h1 class="h1-servicos">Eventos Corporativos<img src="assets/contato.svg" class="img2-h1"></h1>
+                <p class="p-servicos2">Logística, AV e gestão de espaços empresariais.</p>
+            </div>
+            <div class="item-servico">
+                <h1 class="h1-servicos">Festas Infantis<img src="assets/festas.svg" class="img3-h1"></h1>
+                <p class="p-servicos">Decoração temática e entretenimento infantil.</p>
+            </div>
+        </section>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <section class="cont-sobre">
+            <h1 class="titulo-sobre">Sobre a PlanFestAI<img src="assets/logo.svg" class="logo-sobre"></h1>
+            <p class="p-sobre">Somos uma plataforma que usa IA para automatizar e personalizar o planejamento de eventos. Desenvolvida em 2025, com comprometimento e responsabilidade com o cliente e suas necessidades.</p>
+        </section>
+    </section>
+
+    <section id="ia" class="assistente">
+        <section class="titulo-assistente">
+            <h1 class="h1-assistente">Assistente Inteligente <img src="assets/logo.svg" class="img-assistente"></h1>
+            <p class="p-assistente">Descreva sua festa e receba sugestões automáticas</p>
+        </section>
+        <section class="s-ia">
+            <div class="div-prompt">
+                <h1 class="h1-prompt">Descreva sua festa abaixo:</h1> 
+                <textarea class="input-prompt" placeholder="Ex: festa de casamento rústico ao ar livre"></textarea>
+                <button class="enviar-prompt">Sugerir</button>
+            </div>
+            <div class="div-resposta"> 
+                <h1 class="h1-resposta">Sugestão</h1>
+                <ul class="lista-sugestoes"></ul>
+            </div>
+        </section> 
+    </section> 
+</main>
+
+<footer>
+    <div class="footer">
+        <h2 class="h-logo">PlanFest<strong>AI</strong><img src="assets/logo.svg" class="img-logo1"></h2>
+        <p class="p-footer">PlanFestAI - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
