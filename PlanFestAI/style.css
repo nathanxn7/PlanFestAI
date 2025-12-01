@@ -684,3 +684,246 @@ section {
   scroll-margin-top: 100px; /* ajuste conforme a altura do seu menu */
 }
 
+/* ===========================================================
+   RESPONSIVIDADE PRECISA — MOTO EDGE 20 LITE (~412px)
+   Cole este bloco NO FINAL do seu style.css
+   =========================================================== */
+@media (max-width: 430px) {
+
+  /* base */
+  * { box-sizing: border-box; }
+  html, body { width: 100%; height: auto; overflow-x: hidden; }
+  body { font-size: 16px; }
+
+  /* ---------- HEADER ---------- */
+  header {
+    position: static !important;      /* não fixar no topo */
+    width: 100% !important;
+    padding: 14px 16px !important;
+    gap: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(180deg, #000000cc, #140022cc) !important;
+  }
+
+  /* Mostrar só o logo no topo e centralizar */
+  .menu-sec1 { display: flex !important; justify-content: center; align-items:center; width: auto !important; }
+  .h-logo, .logo { font-size: 1.35rem !important; text-align: center; }
+  .img-logo { display: inline-block; width: 1.4rem !important; margin-left: .4rem !important; }
+
+  /* ocultar menu completo para simplificar (pode exibir depois via hamburger) */
+  .menu-sec2, .ul-menu, .li-menu { display: none !important; }
+
+  /* esconder a seção de perfil/sair (ocultar para interface limpa) */
+  .menu-sec3 { display: none !important; }
+
+  /* ---------- HOME / ENTRADA (index.html) ---------- */
+  .msg {
+    padding: 3.2rem 1.2rem 1.6rem 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .subtitulo-entrada {
+    font-size: 1.15rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .titulo-entrada {
+    font-size: 2.2rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 14px !important;
+    color: var(--roxo-escuro) !important;
+  }
+
+  .botao { display:flex; justify-content:center; padding-bottom: 18px; }
+  .a-entrada {
+    font-size: 1.05rem !important;
+    padding: 12px 22px !important;
+    border-radius: 12px !important;
+  }
+
+  /* ---------- GERAL: títulos / seções ---------- */
+  main { margin-top: 0.5rem !important; padding-bottom: 30px; }
+  section { padding-left: 10px !important; padding-right: 10px !important; }
+  .titulos { padding: 2rem 1rem !important; width: auto !important; }
+
+  .titulo-index {
+    font-size: 1.7rem !important;
+    margin: 8px 0 !important;
+  }
+  .subtitulo-index {
+    font-size: 1rem !important;
+    margin: 10px 0 18px 0 !important;
+    color: var(--branco) !important;
+  }
+
+  .a-planejar {
+    display: block !important;
+    width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+    padding: 12px 18px !important;
+    font-size: 1.05rem !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+  }
+
+  /* ---------- SERVIÇOS (lista empilhada) ---------- */
+  .servicos { height: auto !important; padding-bottom: 18px !important; }
+  .h2-servicos { font-size: 1.4rem !important; padding: 18px 8px 12px 8px !important; }
+
+  .lista-de-servicos {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+    margin: 8px 6px !important;
+    align-items: stretch !important;
+  }
+
+  .item-servico {
+    width: 100% !important;
+    background: rgba(255,255,255,0.02);
+    padding: 14px !important;
+    border-radius: 14px;
+    box-shadow: none;
+  }
+
+  .h1-servicos, .h1-servicos1 {
+    font-size: 1.1rem !important;
+    gap: 8px !important;
+    justify-content: center !important;
+  }
+
+  .p-servicos, .p-servicos1, .p-servicos2 {
+    font-size: 1rem !important;
+    margin: 8px 0 0 0 !important;
+    text-align: center !important;
+  }
+
+  /* ---------- SOBRE ---------- */
+  .sobre { height: auto !important; padding-bottom: 18px !important; }
+  .cont-sobre { padding: 18px 12px !important; }
+  .titulo-sobre { font-size: 1.25rem !important; margin-bottom: 8px !important; }
+  .p-sobre { padding: 0 6px !important; font-size: 1rem !important; line-height: 1.5; text-align: center; }
+
+  /* ---------- ASSISTENTE IA (empilha prompt + resposta) ---------- */
+  .assistente { height: auto !important; padding-bottom: 26px !important; }
+
+  .titulo-assistente { padding: 14px 12px !important; height: auto !important; }
+  .h1-assistente { font-size: 1.2rem !important; }
+  .p-assistente { font-size: 0.98rem !important; padding-top: 6px !important; }
+
+  .s-ia {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 10px 8px !important;
+  }
+
+  .div-prompt {
+    width: 100% !important;
+    background-color: var(--violeta) !important;
+    padding: 12px !important;
+    height: auto !important;
+    border-radius: 14px;
+    align-items: stretch !important;
+  }
+
+  .h1-prompt { font-size: 1.1rem !important; padding: 8px 0 !important; color: var(--roxo-escuro); }
+
+  .input-prompt {
+    width: calc(100% - 24px) !important;
+    height: 120px !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    border-radius: 12px !important;
+    margin: 6px auto !important;
+  }
+
+  .enviar-prompt {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    border-radius: 10px !important;
+    margin-top: 8px !important;
+  }
+
+  .div-resposta {
+    width: 100% !important;
+    background-color: var(--roxo-escuro) !important;
+    padding: 12px !important;
+    border-radius: 12px;
+    height: auto !important;
+  }
+
+  .h1-resposta { font-size: 1.15rem !important; padding: 6px 0 !important; }
+
+  /* lista de sugestoes responsiva */
+  .lista-sugestoes {
+    width: 100% !important;
+    padding: 10px !important;
+    margin-top: 8px !important;
+    box-shadow: none !important;
+    background: rgba(255,255,255,0.04) !important;
+  }
+  .lista-sugestoes li { font-size: 0.98rem !important; padding: 8px 6px !important; }
+
+  /* ---------- LOGIN e CADASTRO ---------- */
+  .login { padding: 18px 12px !important; margin-top: 8px !important; }
+  .titulo-login, .titulo-cad { font-size: 1.6rem !important; padding: 8px 0 !important; }
+  .card-login {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    height: auto !important;
+    padding: 16px !important;
+    border-radius: 16px !important;
+    margin: 0 auto !important;
+  }
+
+  .titulo-input { font-size: 1.05rem !important; padding: 8px 0 !important; text-align: left; }
+  .input-login {
+    width: 100% !important;
+    height: 44px !important;
+    font-size: 1rem !important;
+    padding: 8px 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .a-npossui { margin-top: 10px !important; font-size: 0.98rem !important; display:block; text-align:center; }
+
+  .enter-login {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 1.02rem !important;
+    border-radius: 12px !important;
+  }
+
+  /* centralizar div-login */
+  .div-login { display: flex !important; justify-content: center !important; width: 100%; }
+
+  /* ---------- FOOTER ---------- */
+  footer { padding: 18px 12px !important; height: auto !important; background: #000 !important; }
+  .footer { padding-top: 8px !important; text-align: center !important; }
+  .p-footer { font-size: 0.9rem !important; }
+
+  /* ---------- IMAGEM DECORATIVA ---------- */
+  .imagem-fundo {
+    position: absolute !important;
+    top: 100px !important;
+    left: 60% !important;
+    width: 260px !important;
+    opacity: 0.32 !important;
+    transform: translateX(0) !important;
+    z-index: 0 !important;
+  }
+
+  /* ---------- OUTROS AJUSTES ÚTEIS ---------- */
+  .pf-container { grid-template-columns: 1fr !important; gap: 12px !important; padding: 6px !important; }
+  .pf-card { padding: 10px !important; border-radius: 10px !important; box-shadow: none !important; }
+
+  /* reduzir scroll-margin-top para seções (header não fixo) */
+  section { scroll-margin-top: 80px !important; }
+
+} /* end media */
+
+
