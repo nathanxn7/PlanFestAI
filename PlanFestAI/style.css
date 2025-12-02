@@ -734,7 +734,7 @@ section {
     font-size: 2.2rem !important;
     line-height: 1.15 !important;
     margin-bottom: 14px !important;
-    color: var(--roxo-escuro) !important;
+    color: var(--roxo-claro) !important;
   }
 
   .botao { display:flex; justify-content:center; padding-bottom: 18px; }
@@ -926,5 +926,6 @@ section {
   section { scroll-margin-top: 80px !important; }
 
 } /* end media */
+
 
 
