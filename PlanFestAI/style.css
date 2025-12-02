@@ -869,8 +869,8 @@ section {
   .lista-sugestoes li { font-size: 0.98rem !important; padding: 8px 6px !important; }
 
   /* ---------- LOGIN e CADASTRO ---------- */
-  .login { padding: 18px 12px !important; margin-top: 8px !important; }
-  .titulo-login, .titulo-cad { font-size: 1.6rem !important; padding: 8px 0 !important; }
+  .login { padding: 18px 12px !important; margin-top: 8px !important; margin-bottom: 100vh; }
+  .titulo-login, .titulo-cad { font-size: 1.6rem !important; padding: 8px 0 !important; margin-bottom: 1.2em; }
   .card-login {
     width: calc(100% - 32px) !important;
     max-width: none !important;
